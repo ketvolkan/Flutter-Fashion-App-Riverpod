@@ -1,16 +1,5 @@
-# modaapp
+# Flutter Fashion App Riverpd
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Ekran görüntüsü 2022-03-30 155221](https://user-images.githubusercontent.com/80161667/160839842-8c94d99a-03a9-441b-9713-fac076c38ffc.png)
+<br>
+![Ekran görüntüsü 2022-03-30 155241](https://user-images.githubusercontent.com/80161667/160839857-878ec383-9dd2-4b86-9d57-af3408c4ac35.png)
