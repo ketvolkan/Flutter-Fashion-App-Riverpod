@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:modaapp/main.dart';
 import 'package:modaapp/widgets/AppBarWidget.dart';
 import 'package:modaapp/widgets/BottomAppBarWidget.dart';
+import 'package:modaapp/widgets/CardListWidget.dart';
 import 'package:modaapp/widgets/CardWidget.dart';
 import 'package:modaapp/widgets/FollowProfilesWidget.dart';
 
@@ -22,19 +23,13 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0,
         title: AppBarWidget(),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            SizedBox(
-              height: 30,
-            ),
-            FollowProfilesWidget(),
-            CardWidget(),
-            SizedBox(
-              height: 30,
-            ),
-          ],
-        ),
+      body: Column(
+        children: <Widget>[
+          SizedBox(
+            height: 5,
+          ),
+          CardListWidget(),
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         child: BottomAppBarWidget(),
