@@ -10,25 +10,25 @@ class BottomAppBarWidget extends StatelessWidget {
       children: [
         IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.home,
             color: Colors.grey,
           ),
         ),
         IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.local_play_rounded,
             color: Colors.grey,
           ),
         ),
         IconButton(
           onPressed: () {},
-          icon: Icon(Icons.send),
+          icon: const Icon(Icons.send),
         ),
         IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.account_box_rounded,
             color: Colors.grey,
           ),

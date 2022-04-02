@@ -6,11 +6,11 @@ class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children: [
+      children: const [
         Align(
           alignment: Alignment.topLeft,
           child: Padding(
-            padding: const EdgeInsets.only(top: 20, bottom: 20),
+            padding: EdgeInsets.only(top: 20, bottom: 20),
             child: Text(
               'Moda Uygulaması',
               style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
@@ -20,7 +20,7 @@ class AppBarWidget extends StatelessWidget {
         Align(
           alignment: Alignment.topRight,
           child: Padding(
-              padding: const EdgeInsets.only(top: 20, bottom: 20),
+              padding: EdgeInsets.only(top: 20, bottom: 20),
               child: Icon(
                 Icons.add_a_photo,
                 color: Colors.grey,

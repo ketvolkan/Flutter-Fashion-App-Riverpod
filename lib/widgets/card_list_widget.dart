@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:modaapp/models/Post.dart';
-import 'package:modaapp/providers/postsProvider.dart';
-import 'package:modaapp/widgets/CardWidget.dart';
-import 'package:modaapp/widgets/FollowProfilesWidget.dart';
+import 'package:modaapp/models/post.dart';
+import 'package:modaapp/providers/posts_provider.dart';
+import 'package:modaapp/widgets/card_widget.dart';
+import 'package:modaapp/widgets/follow_profiles_widget.dart';
 
 class CardListWidget extends ConsumerWidget {
   const CardListWidget({Key? key}) : super(key: key);
@@ -14,14 +14,15 @@ class CardListWidget extends ConsumerWidget {
     return Column(
       children: [
         SizedBox(
-          height: 520,
+          height: MediaQuery.of(context).size.height - 139,
           child: ListView.builder(
+              shrinkWrap: true,
               itemCount: _posts.length + 1,
               itemBuilder: (context, index) {
                 if (index == 0) {
-                  return FollowProfilesWidget();
+                  return const FollowProfilesWidget();
                 } else if (index == 1) {
-                  return SizedBox(
+                  return const SizedBox(
                     height: 10,
                   );
                 } else {
@@ -29,12 +30,12 @@ class CardListWidget extends ConsumerWidget {
                     overrides: [
                       currentPostProvider.overrideWithValue(_posts[index - 2]),
                     ],
-                    child: CardWidget(),
+                    child: const CardWidget(),
                   );
                 }
               }),
         ),
-        SizedBox(
+        const SizedBox(
           height: 30,
         )
       ],

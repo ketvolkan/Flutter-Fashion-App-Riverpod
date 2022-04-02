@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:modaapp/pages/HomePage.dart';
+import 'package:modaapp/pages/home_page.dart';
+import 'package:modaapp/routes/route_generator.dart';
 
 void main() {
-  runApp(ProviderScope(child: const MyApp()));
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       home: const MyHomePage(),
+      onGenerateRoute: RouteGenerator.routeGenerator,
     );
   }
 }

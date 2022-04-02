@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:modaapp/models/Post.dart';
+import 'package:modaapp/models/post.dart';
 
 final postListProvider = Provider<List<Post>>((ref) {
-  List<Post> images = [
+  List<Post> images = const [
     Post(
         id: 0,
         username: "Merve",
@@ -35,5 +35,8 @@ final postListProvider = Provider<List<Post>>((ref) {
   return images;
 });
 final currentPostProvider = Provider<Post>((ref) {
+  throw UnimplementedError();
+});
+final clickedPostProvider = Provider<Post>((ref) {
   throw UnimplementedError();
 });

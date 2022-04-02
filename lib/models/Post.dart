@@ -7,10 +7,11 @@ class Post {
   final String comment;
   final String time;
   final String photoUrl;
-  Post(
+
+  const Post(
       {required this.id,
       required this.username,
       required this.comment,
       required this.time,
-      required this.photoUrl}) {}
+      required this.photoUrl});
 }

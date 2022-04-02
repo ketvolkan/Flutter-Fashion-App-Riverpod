@@ -1,11 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:modaapp/main.dart';
-import 'package:modaapp/widgets/AppBarWidget.dart';
-import 'package:modaapp/widgets/BottomAppBarWidget.dart';
-import 'package:modaapp/widgets/CardListWidget.dart';
-import 'package:modaapp/widgets/CardWidget.dart';
-import 'package:modaapp/widgets/FollowProfilesWidget.dart';
+import 'package:modaapp/widgets/app_bar_widget.dart';
+import 'package:modaapp/widgets/bottom_app_bar_widget.dart';
+import 'package:modaapp/widgets/card_list_widget.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -21,17 +17,17 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        title: AppBarWidget(),
+        title: const AppBarWidget(),
       ),
       body: Column(
-        children: <Widget>[
+        children: const <Widget>[
           SizedBox(
             height: 5,
           ),
           CardListWidget(),
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
+      bottomNavigationBar: const BottomAppBar(
         child: BottomAppBarWidget(),
       ),
     );
