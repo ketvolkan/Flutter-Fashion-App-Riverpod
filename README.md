@@ -1,5 +1,29 @@
-# Flutter Fashion App Riverpd
+# FashionApp
+<h3> dependencies: </h3>
+&emsp;flutter_riverpod: ^2.0.0-dev.5
 
-![Ekran görüntüsü 2022-03-30 155221](https://user-images.githubusercontent.com/80161667/160839842-8c94d99a-03a9-441b-9713-fac076c38ffc.png)
+<h3> versions: </h3>
+&emsp;dart: 2.16.1
+&emsp;flutter: 2.10.3
+<h3> aim: </h3>
+&emsp;1: Projemiz kullanıcıların moda ile ilgili postlar atabildiği satış yapabildiği ve birbirini takip edebileceği instagram  benzeri bir mobil uygulamadır.
+
+<h3> extra: </h3>
+&emsp;1: Projeyi yaparken state managment için Riverpod kullanılmıştır.
+
+<h3> in-app image: </h3>
+
+![1](https://user-images.githubusercontent.com/80161667/161384412-8d435893-20fa-4f45-bcf8-24a2433ca2ef.png)
+
 <br>
-![Ekran görüntüsü 2022-03-30 155241](https://user-images.githubusercontent.com/80161667/160839857-878ec383-9dd2-4b86-9d57-af3408c4ac35.png)
+
+![2](https://user-images.githubusercontent.com/80161667/161384423-93ce79d2-3eb8-496e-81aa-4e308a26f309.png)
+
+<br>
+
+![3](https://user-images.githubusercontent.com/80161667/161384425-2677463a-7f37-4d08-9211-966aef87f6e1.png)
+
+<br>
+ 
+![4](https://user-images.githubusercontent.com/80161667/161384429-6034e9b1-3932-4fe8-b8fe-2095c42bb9c0.png)
+ 
