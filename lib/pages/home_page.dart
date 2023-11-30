@@ -14,22 +14,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        title: const AppBarWidget(),
-      ),
-      body: Column(
-        children: const <Widget>[
-          SizedBox(
-            height: 5,
-          ),
-          CardListWidget(),
-        ],
-      ),
-      bottomNavigationBar: const BottomAppBar(
-        child: BottomAppBarWidget(),
-      ),
+      appBar: AppBar(backgroundColor: Colors.white, elevation: 0, title: const AppBarWidget()),
+      body: const Column(children: <Widget>[SizedBox(height: 5), Expanded(child: CardListWidget())]),
+      bottomNavigationBar: const BottomAppBar(child: BottomAppBarWidget()),
     );
   }
 }

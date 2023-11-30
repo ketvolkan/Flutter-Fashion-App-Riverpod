@@ -5,8 +5,8 @@ class AppBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: const [
+    return const Stack(
+      children: [
         Align(
           alignment: Alignment.topLeft,
           child: Padding(

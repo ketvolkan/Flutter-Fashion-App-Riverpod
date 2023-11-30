@@ -13,53 +13,42 @@ class ProfilesWidget extends ConsumerWidget {
       children: [
         Column(
           children: [
-            Stack(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(500),
-                  child: Image.asset(
-                    _currentImage.image,
-                    width: 75,
-                    height: 75,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                Positioned(
-                  top: 60,
-                  left: 60,
-                  child: Image.asset(
-                    _currentImage.logo,
-                    width: 15,
-                    fit: BoxFit.fitWidth,
-                  ),
-                ),
-              ],
-            ),
+            imageSide(_currentImage),
             const SizedBox(height: 10),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(50),
-              child: Container(
-                height: 30,
-                color: Colors.brown,
-                child: TextButton(
-                    onPressed: () {},
-                    child: const Padding(
-                      padding: EdgeInsets.only(left: 10, right: 10),
-                      child: Text(
-                        "Follow",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                          fontWeight: FontWeight.w200,
-                        ),
-                      ),
-                    )),
-              ),
-            ),
+            textSide(),
           ],
         ),
         const SizedBox(width: 30),
       ],
+    );
+  }
+
+  Stack imageSide(FollowImages _currentImage) {
+    return Stack(
+      children: [
+        ClipRRect(
+          borderRadius: BorderRadius.circular(500),
+          child: Image.asset(_currentImage.image, width: 75, height: 75, fit: BoxFit.cover),
+        ),
+        Positioned(top: 60, left: 60, child: Image.asset(_currentImage.logo, width: 15, fit: BoxFit.fitWidth)),
+      ],
+    );
+  }
+
+  ClipRRect textSide() {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(50),
+      child: Container(
+        height: 30,
+        color: Colors.brown,
+        child: TextButton(
+          onPressed: () {},
+          child: const Padding(
+            padding: EdgeInsets.only(left: 10, right: 10),
+            child: Text("Follow", style: TextStyle(color: Colors.white, fontSize: 15)),
+          ),
+        ),
+      ),
     );
   }
 }

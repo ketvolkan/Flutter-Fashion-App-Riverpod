@@ -13,8 +13,7 @@ class CardListWidget extends ConsumerWidget {
     List<Post> _posts = ref.watch(postListProvider);
     return Column(
       children: [
-        SizedBox(
-          height: MediaQuery.of(context).size.height - 139,
+        Expanded(
           child: ListView.builder(
               shrinkWrap: true,
               itemCount: _posts.length + 1,
@@ -22,22 +21,15 @@ class CardListWidget extends ConsumerWidget {
                 if (index == 0) {
                   return const FollowProfilesWidget();
                 } else if (index == 1) {
-                  return const SizedBox(
-                    height: 10,
-                  );
+                  return const SizedBox(height: 10);
                 } else {
                   return ProviderScope(
-                    overrides: [
-                      currentPostProvider.overrideWithValue(_posts[index - 2]),
-                    ],
+                    overrides: [currentPostProvider.overrideWithValue(_posts[index - 2])],
                     child: const CardWidget(),
                   );
                 }
               }),
         ),
-        const SizedBox(
-          height: 30,
-        )
       ],
     );
   }

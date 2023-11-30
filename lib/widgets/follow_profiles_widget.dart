@@ -19,14 +19,9 @@ class FollowProfilesWidget extends ConsumerWidget {
         itemCount: _imagesPath.length + 1,
         itemBuilder: (context, index) {
           return index == 0
-              ? const SizedBox(
-                  height: 10,
-                )
+              ? const SizedBox(height: 10)
               : ProviderScope(
-                  overrides: [
-                    currentImageProvider
-                        .overrideWithValue(_imagesPath[index - 1]),
-                  ],
+                  overrides: [currentImageProvider.overrideWithValue(_imagesPath[index - 1])],
                   child: const ProfilesWidget(),
                 );
         },
